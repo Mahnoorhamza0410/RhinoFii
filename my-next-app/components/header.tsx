@@ -33,7 +33,9 @@ export default function Header() {
         </div>
         {/* Mobile Logo */}
         <div className="flex justify-center w-full lg:hidden">
+        <Link href="/">
           <Image src="/Rhino-logo.png" alt="Logo" width={180} height={60} />
+          </Link>
         </div>
         {/* Mobile Toggle Button */}
         <button
