@@ -39,7 +39,7 @@ export default function CountPart({ targetDate = '2025-12-31T23:59:59' }) {
 
   return (
     <div
-      className="relative bg-no-repeat bg-cover bg-center w-full opacity-40 bg-[linear-gradient(90deg,rgba(47,35,82,0.2)_0%,rgba(143,108,250,0.2)_100%)] mx-auto px-4 py-10 sm:py-12 z-10"
+      className="relative bg-no-repeat bg-cover bg-center w-full opacity-40 bg-[linear-gradient(90deg,rgba(47,35,82,0.2)_0%,rgba(143,108,250,0.2)_100%)] mx-auto px-4 py-10 sm:py-12 z-10 "
       // 🔥 Updated: removed -mt-38, increased py (padding-y) for spacing
     >
       {/* Gradient behind countdown */}
