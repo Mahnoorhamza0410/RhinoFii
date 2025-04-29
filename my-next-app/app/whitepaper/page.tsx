@@ -1,19 +1,41 @@
+import UpperFooterImage from '@/components/UpperFooterImage'
+import DynamicLayout from '@/components/DynamicLayout';
+import { Particles } from "@/components/magicui/particles";
 import React from 'react'
 
 const page = () => {
   return (
-    <div className="w-full flex flex-col items-center px-4 pb-20 pt-[150px] pb-[100px]">
+    // <div className="w-full flex flex-col items-center pt-[150px] ">
+      <div className="w-full flex flex-col items-center">
       {/* Heading */}
-      <div className="text-center w-full">
+      {/* <div className="text-center w-full">
         <h1 className=" text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[70px] leading-[130%]">
           SOLIDITY WHITEPAPER
         </h1>
+      </div> */}
+       <div
+        className="w-full bg-cover bg-center bg-no-repeat  min-h-[700px] flex items-center justify-center px-4"
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      >
+         {/* Insert Particles JUST inside Banner */}
+         <div className="absolute inset-0 z-0">
+          <Particles 
+            quantity={40} 
+            staticity={40} 
+            ease={40} 
+            size={1} 
+            color="#ffffff"
+          />
+        </div>
+        <DynamicLayout
+          title="SOLIDITY WHITEPAPER"
+        />
       </div>
 
       {/* Content */}
-      <div className="w-full max-w-[1074px] mt-10 pt-[84px]">
+      <div className="w-full max-w-[1074px] s pt-[84px] pb-[100px] px-4 mt-[-350px]">
         <h5 className="text-white font-bold text-[24px]">Abstract</h5>
-        <p className="text-white font-light text-[20px] tracking-wider">
+        <p className="text-white font-light text-[18px] tracking-wider">
           Solidity is a groundbreaking LP reflection token on the PulseChain ecosystem.
           Designed to empower investors with a fair, transparent, and hyper-deflationary platform, Solidity integrates cutting-edge features such as dynamic sell tax, LP reflection rewards, and token-burning mechanisms to enhance value over time.
           Our mission is to create a sustainable, wealth-building community that provides education, tools, and incentives to support long-term holders.
@@ -21,7 +43,7 @@ const page = () => {
 
         <div className="mt-8">
           <h5 className="text-white font-bold text-[24px]">Introduction</h5>
-          <p className="text-white font-light text-[20px] tracking-wider">
+          <p className="text-white font-light text-[18px] tracking-wider">
             Cryptocurrency is revolutionizing the way we perceive and interact with financial systems. Despite this, many projects lack the transparency and long-term strategies needed to foster trust and sustainable growth.
             Solidity addresses these challenges by creating a fair launch, hyper-deflationary token that aligns with the principles of decentralization, fairness, and community empowerment.
             Solidity is the first LP reflection token on PulseChain, offering rewards in SolidX and Gelato while simultaneously burning tokens to increase scarcity. Through advanced features and partnerships, Solidity provides tools, education, and incentives to ensure that holders achieve wealth and financial freedom.
@@ -31,7 +53,7 @@ const page = () => {
         <div className="mt-8">
           <h5 className="text-white font-bold text-[24px]">Key Features</h5>
 
-          <div className="text-white font-light text-[20px] tracking-wider space-y-6 mt-4">
+          <div className="text-white font-light text-[18px] tracking-wider space-y-6 mt-4">
             {/* 1. Fair Launch */}
             <div>
               <p><strong>1. Fair Launch</strong></p>
@@ -88,7 +110,7 @@ const page = () => {
         <div className="mt-8">
           <h5 className="text-white font-bold text-[24px]">Tokenomics</h5>
 
-          <div className="text-white font-light text-[20px] tracking-wider space-y-6 mt-4">
+          <div className="text-white font-light text-[18px] tracking-wider space-y-6 mt-4">
             {/* 1. Supply Allocation */}
             <div>
               <p><strong>1. Supply Allocation</strong></p>
@@ -120,7 +142,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 text-white font-light text-[20px] tracking-wider space-y-6">
+        <div className="mt-8 text-white font-light text-[18px] tracking-wider space-y-6">
 
           {/* Conclusion */}
           <div>
@@ -142,6 +164,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <UpperFooterImage/>
     </div>
   )
 }
