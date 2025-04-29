@@ -10,7 +10,7 @@ const DynamicLayout: React.FC<DynamicLayoutProps> = ({ title, subtitle, children
     // <section className="flex flex-col items-center justify-center px-4 pt-[100px] pb-6"> padding was 100px now i change in 0px
      <section className="flex flex-col items-center justify-center px-4 pt-[0px] pb-6"> 
       {/* Heading */}
-      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[40px] sm:text-[60px] text-center">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[36px] sm:text-[60px] text-center">
         {title}
       </h1>
       {/* Paragraph with subtitle if exists */}
@@ -25,3 +25,43 @@ const DynamicLayout: React.FC<DynamicLayoutProps> = ({ title, subtitle, children
   );
 };
 export default DynamicLayout;
+
+// 'use client';
+// import React from 'react';
+
+// interface DynamicLayoutProps {
+//   title: string;
+//   subtitle?: React.ReactNode;
+//   children?: React.ReactNode;
+// }
+
+// const DynamicLayout: React.FC<DynamicLayoutProps> = ({ title, subtitle, children }) => {
+//   return (
+//     // Changed pt-[100px] to pt-[0px] ✅
+//     <section className="flex flex-col items-center justify-center px-4 pt-[0px] pb-6">
+      
+//       {/* Heading */}
+//       <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[36px] sm:text-[60px] text-center">
+//         {title}
+//       </h1>
+
+//       {/* Paragraph with subtitle if exists */}
+//       {subtitle && (
+//         <p 
+//           className={`py-3 rounded-md text-center max-w-[834px] 
+//         `
+//           }
+//         >
+//           {subtitle}
+//         </p>
+//       )}
+
+//       {/* Content Area */}
+//       <div className="mt-6 w-full flex justify-center">
+//         {children}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default DynamicLayout;

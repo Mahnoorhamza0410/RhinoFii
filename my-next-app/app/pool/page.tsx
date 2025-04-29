@@ -10,9 +10,9 @@
 //      < UpperFooterImage/>
 //      {/* <CountdownTimer /> */}
 //     </div>;
-    
+
 //   };
-  
+
 //   export default Pool;
 
 'use client';
@@ -25,25 +25,25 @@ const Page = () => {
     <div className="w-full">
       {/* Banner section with background image */}
       <div
-        className="w-full bg-cover bg-center bg-no-repeat  min-h-[700px] flex items-center justify-center px-4"
+        className="w-full bg-cover bg-center bg-no-repeat min-h-[700px] flex items-center justify-center px-4"
         style={{ backgroundImage: "url('/hero-bg.jpg')" }}
       >
-         {/* Insert Particles JUST inside Banner */}
-         <div className="absolute inset-0 z-0">
-          <Particles 
-            quantity={40} 
-            staticity={40} 
-            ease={40} 
-            size={1} 
-            color="#ffffff"
+        {/* Insert Particles JUST inside Banner */}
+        <div className="absolute inset-0 z-0">
+          <Particles
+            quantity={40}
+            staticity={40}
+            ease={40}
+            size={1}
+            color="#FFFFFF"
           />
         </div>
         <DynamicLayout
           title="LIQUIDITY POOLS"
           subtitle={
             <>
-            <strong className="font-bold">Manage </strong>
-               Your DITY Liquidity Pools, Tax Free, Below.{' '}
+              <strong className="font-bold">Manage </strong>
+              Your DITY Liquidity Pools, Tax Free, Below.{' '}
               {/* <strong className="font-bold">$3,458</strong> */}
             </>
           }
@@ -51,7 +51,7 @@ const Page = () => {
       </div>
       {/* Iframe Section */}
       <div className="w-full px-4 py-12 flex justify-center mt-[-250px]">
-        <div className="w-full max-w-[1000px] h-[800px] pb-[90px]"> 
+        <div className="w-full max-w-[1000px] h-[800px] pb-[90px]">
           <iframe
             src="https://www.voipbusiness.com/"
             title="CoinMarketCap"
@@ -59,7 +59,7 @@ const Page = () => {
           ></iframe>
         </div>
       </div>
-      <UpperFooterImage/>
+      <UpperFooterImage />
     </div>
   );
 };

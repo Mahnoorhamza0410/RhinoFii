@@ -51,7 +51,7 @@ export default function CustomVideo() {
     };
   }, []);
   return (
-    <div className="w-full px-5 sm:px-0 max-w-4xl mx-auto my-10 relative">
+    <div className="w-full px-5 sm:px-0 max-w-4xl mx-auto my-10 relative sm:pt-[100px] pt-[50px]">
       {/* Video Element */}
       <video
         ref={videoRef}

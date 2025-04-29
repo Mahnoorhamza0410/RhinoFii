@@ -18,7 +18,7 @@ export default function BannerLayout({ children }: { children: React.ReactNode }
       </div>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 pt-[120px] flex flex-col justify-start items-center text-center px-4 z-10">
+      <div className="absolute inset-0 pt-[120px] flex flex-col justify-start items-center text-center z-10">
         {children}
       </div>
     </div>

@@ -39,7 +39,7 @@ export default function CountPart({ targetDate = '2025-12-31T23:59:59' }) {
 
   return (
     <div
-      className="relative w-full bg-no-repeat bg-cover bg-center max-w-[1440px] mx-auto px-4 py-10 sm:py-12 lg:py-16 z-10"
+      className="relative bg-no-repeat bg-cover bg-center w-full opacity-40 bg-[linear-gradient(90deg,rgba(47,35,82,0.2)_0%,rgba(143,108,250,0.2)_100%)] mx-auto px-4 py-10 sm:py-12 z-10"
       // 🔥 Updated: removed -mt-38, increased py (padding-y) for spacing
     >
       {/* Gradient behind countdown */}
@@ -50,8 +50,8 @@ export default function CountPart({ targetDate = '2025-12-31T23:59:59' }) {
           left: '0px',
           width: '100%',
           height: '90px', // 🔥 Mobile height
-          opacity: 0.4,
-          background: 'linear-gradient(90deg, rgba(47, 35, 82, 0.20) 0%, rgba(143, 108, 250, 0.20) 100%)',
+          // opacity: 0.4,
+          // background: 'linear-gradient(90deg, rgba(47, 35, 82, 0.20) 0%, rgba(143, 108, 250, 0.20) 100%)',
         }}
       >
         {/* Responsive height adjustment */}
@@ -69,7 +69,7 @@ export default function CountPart({ targetDate = '2025-12-31T23:59:59' }) {
         {/* Left: Icon + Text */}
         <div className="flex items-center gap-3 min-w-max z-10">
           <Image src="/Live.png" alt="Get Ready Icon" width={40} height={40} />
-          <h5 className="text-xl sm:text-2xl font-semibold text-white whitespace-nowrap">
+          <h5 className="text-[28px] sm:text-[36px] font-semibold text-white whitespace-nowrap">
             Get Ready...
           </h5>
         </div>
