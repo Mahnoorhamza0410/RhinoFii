@@ -30,7 +30,7 @@ export default function TokenTabsWithIframe() {
       {/* Conditionally Render iframe */}
       {activeTab === 'buy' && (
         <div className="flex justify-center w-full">
-          <div className="rounded-lg shadow-lg h-[500px] w-[400px] overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+          <div className="rounded-lg h-[500px] w-[400px] overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
             <iframe
               src="https://pulsex.mypinata.cloud/ipfs/bafybeiesh56oijasgr7creubue6xt5anivxifrwd5a5argiz4orbed57qi/#/?inputCurrency=0x616cb6a245Ed4c11216Ec58D10B6A2E87271845d&amp;outputCurrency=PLS"
               className="w-full h-[600px] border-none"
