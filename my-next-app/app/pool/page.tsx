@@ -1,6 +1,6 @@
 import UpperFooterImage from '@/components/UpperFooterImage';
 import DynamicLayout from '@/components/DynamicLayout';
-import CountdownTimer from '@/components/CountdownTimer ';
+// import CountdownTimer from '@/components/CountdownTimer ';
 
 const Pool = () => {
     return <div>
@@ -8,7 +8,7 @@ const Pool = () => {
       <p className="text-lg">This is the homepage with a background and dynamic layout.</p>
     </DynamicLayout>
      < UpperFooterImage/>
-     <CountdownTimer />
+     {/* <CountdownTimer /> */}
     </div>;
   };
   
