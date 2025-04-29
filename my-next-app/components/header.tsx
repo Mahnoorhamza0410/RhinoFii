@@ -64,6 +64,7 @@ export default function Header() {
           >
             <Link href="/leaderboard" onClick={() => setMenuOpen(false)} className="whitespace-nowrap">LeaderBoard</Link>
             <Link href="/whitepaper" onClick={() => setMenuOpen(false)}>WhitePaper</Link>
+            <Link href="/pool" onClick={() => setMenuOpen(false)}>Liquidity Pool</Link>
           </div>
         </>
       )}

@@ -7,7 +7,8 @@ interface DynamicLayoutProps {
 }
 const DynamicLayout: React.FC<DynamicLayoutProps> = ({ title, subtitle, children }) => {
   return (
-    <section className="flex flex-col items-center justify-center px-4 pt-[100px] pb-6">
+    // <section className="flex flex-col items-center justify-center px-4 pt-[100px] pb-6"> padding was 100px now i change in 0px
+     <section className="flex flex-col items-center justify-center px-4 pt-[0px] pb-6"> 
       {/* Heading */}
       <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[40px] sm:text-[60px] text-center">
         {title}

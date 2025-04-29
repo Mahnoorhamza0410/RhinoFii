@@ -24,6 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={poppins.variable}>
       <body className="relative bg-black text-white">
       <div className="fixed inset-0 -z-10">
+      {/* <div className="fixed inset-0 -z-10 h-full w-full"> */}
+      {/* <Particles className="h-full w-full" /> */}
   <Particles />
 </div>
         <Header />
