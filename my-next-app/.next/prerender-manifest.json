@@ -30,7 +30,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/pool": {
+    "/leaderboard": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -43,8 +43,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/pool",
-      "dataRoute": "/pool.rsc",
+      "srcRoute": "/leaderboard",
+      "dataRoute": "/leaderboard.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -78,7 +78,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/leaderboard": {
+    "/home": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -91,8 +91,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/leaderboard",
-      "dataRoute": "/leaderboard.rsc",
+      "srcRoute": "/home",
+      "dataRoute": "/home.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -126,7 +126,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/home": {
+    "/pool": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -139,8 +139,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/home",
-      "dataRoute": "/home.rsc",
+      "srcRoute": "/pool",
+      "dataRoute": "/pool.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -154,8 +154,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "7fd134b66702aac07a26a0d0850b7c7c",
-    "previewModeSigningKey": "f6d5d705e52d0989ab83243c3a6bd1ae9351ba7b88e3242b26d704be07cdabff",
-    "previewModeEncryptionKey": "c1f5623bb10f2b5a9be2c84d44d8e4a9319a3c9a301005f7bd6273ad3bed1183"
+    "previewModeId": "2347171cabfacab49d810997392dd0b2",
+    "previewModeSigningKey": "a43097bd23e34cbf5950e0f0ff68ec0893dbb19721b6c9092df0203ed3d1fd17",
+    "previewModeEncryptionKey": "17147ef0c118d176e9129f434fa09d755272746ef3b29d8768af5acf18f99894"
   }
 }

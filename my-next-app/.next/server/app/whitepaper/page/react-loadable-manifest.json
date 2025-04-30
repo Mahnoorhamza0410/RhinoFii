@@ -1,9 +1,0 @@
-{
-  "[project]/components/magicui/particles.tsx [app-client] (ecmascript, next/dynamic entry)": {
-    "id": "[project]/components/magicui/particles.tsx [app-client] (ecmascript, next/dynamic entry)",
-    "files": [
-      "static/chunks/components_magicui_particles_tsx_5e95ff2c._.js",
-      "static/chunks/components_magicui_particles_tsx_24aa75bd._.js"
-    ]
-  }
-}
