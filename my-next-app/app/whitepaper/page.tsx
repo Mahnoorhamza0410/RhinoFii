@@ -7,8 +7,6 @@ import DynamicLayout from '@/components/DynamicLayout';
 
 const Particles = dynamic(() => import("@/components/magicui/particles").then((mod) => mod.Particles), { ssr: false });
 
-// import React from 'react'
-
 const page = () => {
   return (
     // <div className="w-full flex flex-col items-center pt-[150px] ">

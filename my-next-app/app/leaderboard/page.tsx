@@ -36,8 +36,8 @@ const Page = () => {
         />
       </div>
       {/* Iframe Section */}
-      <div className="w-full px-4 py-12 flex justify-center mt-[-250px]">
-        <div className="w-full max-w-[1000px] h-[800px] pb-[90px]">
+      <div className="w-full px-4 pt-[0px] flex justify-center mt-[-260px]">
+        <div className="w-full max-w-[655px] h-[800px] pb-[90px]">
           <iframe
             src="http://bitselexion.com/"
             title="CoinMarketCap"

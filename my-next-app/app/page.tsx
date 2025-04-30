@@ -131,16 +131,16 @@ export default function Page() {
     <main>
       {/* Banner with content inside */}
       <BannerLayout>
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[36px] sm:text-[60px] ">
-          THE FIRST EVER
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ADADAD] font-extrabold text-[36px] sm:text-[60px] capitalize leading-[130%]" style={{ textShadow: '0px 5px 12px rgba(0, 0, 0, 0.20)' }}>
+        THE FIRST EVER
         </h1>
-        <p className="text-white font-light text-[18px] sm:text-[42px] mt-4">
+        <p className="text-white font-light text-[18px] sm:text-[42px] mt-4 leading-[125%]">
           Hyper Deflationary, Dynamically Taxed, <br /> Multi-Rewards Machine
         </p>
-        <div className="flex justify-center w-full mt-8">
+        <div className="flex justify-center w-full sm:mt-[48px] mt-[28px]">
           <a
             href="#"
-            className="inline-flex items-center uppercase justify-center px-[32px] sm:px-[51px] py-[18px] font-bold text-[18px] sm:text-[22px] rounded-[500px] bg-gradient-to-r from-[#BB57BF] via-[#2E4B94] to-[#2CC8D8] text-white"
+            className="inline-flex items-center uppercase sm:h-[auto] h-[59px] sm:w-[auto] w-[340px] justify-center px-[32px] sm:px-[51px] py-[18px] font-bold text-[18px] sm:text-[22px] rounded-[500px] bg-gradient-to-r from-[#BB57BF] via-[#2E4B94] to-[#2CC8D8] text-white leading-[48px]"
           >
             Join The Stampede
             <svg
@@ -179,7 +179,7 @@ export default function Page() {
           </a>
         </div>
          {/* CountdownTimer inside the banner now */}
-         <div className="flex justify-center items-end w-full mt-8">
+         <div className="flex justify-center items-end w-full mt-auto">
           <CountdownTimer />
         </div>
         

@@ -50,8 +50,8 @@ const Page = () => {
         />
       </div>
       {/* Iframe Section */}
-      <div className="w-full px-4 py-12 flex justify-center mt-[-250px]">
-        <div className="w-full max-w-[1000px] h-[800px] pb-[90px]">
+      <div className="w-full px-4 pt-[40px] flex justify-center mt-[-250px]">
+        <div className="w-full max-w-[730px] h-[800px] pb-[90px]">
           <iframe
             src="https://www.voipbusiness.com/"
             title="CoinMarketCap"
@@ -59,6 +59,9 @@ const Page = () => {
           ></iframe>
         </div>
       </div>
+   
+
+
       <UpperFooterImage />
     </div>
   );

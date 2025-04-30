@@ -5,12 +5,18 @@ export default function BannerLayout({ children }: { children: React.ReactNode }
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
-      <img
+      {/* <img
         src="/hero-bg.jpg"
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover z-[-2]"
         style={{ objectPosition: 'top center' }}
-      />
+      /> */}
+      <img
+src="/hero-bg.jpg"
+alt="Hero Background"
+className="absolute inset-0 w-full h-full object-cover z-[-2]"
+style={{ objectPosition: '8% center' }}
+/>
 
       {/* Particles over image */}
       <div className="absolute inset-0 z-[-1] pointer-events-none">
@@ -18,7 +24,7 @@ export default function BannerLayout({ children }: { children: React.ReactNode }
       </div>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 pt-[120px] flex flex-col justify-start items-center text-center z-10">
+      <div className="absolute inset-0 pt-[390px] sm:pt-[120px] flex flex-col justify-center items-center text-center z-10">
         {children}
       </div>
     </div>
