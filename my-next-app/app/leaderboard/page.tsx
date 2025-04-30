@@ -1,8 +1,12 @@
 'use client';
+import dynamic from "next/dynamic";
 import React from 'react';
 import DynamicLayout from '@/components/DynamicLayout';
 import UpperFooterImage from '@/components/UpperFooterImage'
-import { Particles } from "@/components/magicui/particles";
+// import { Particles } from "@/components/magicui/particles";
+
+const Particles = dynamic(() => import("@/components/magicui/particles").then((mod) => mod.Particles), { ssr: false });
+
 const Page = () => {
   return (
     <div className="w-full">

@@ -1,4 +1,18 @@
 {
+  "app\\leaderboard\\page.tsx -> @/components/magicui/particles": {
+    "id": 6366,
+    "files": [
+      "static/chunks/277-0e2bea38edafe8ba.js",
+      "static/chunks/366.944cf7779ebfe453.js"
+    ]
+  },
+  "app\\whitepaper\\page.tsx -> @/components/magicui/particles": {
+    "id": 6366,
+    "files": [
+      "static/chunks/277-0e2bea38edafe8ba.js",
+      "static/chunks/366.944cf7779ebfe453.js"
+    ]
+  },
   "node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
     "id": 472,
     "files": [

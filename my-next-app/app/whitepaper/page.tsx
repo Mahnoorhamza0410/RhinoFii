@@ -1,7 +1,13 @@
+'use client';
+import dynamic from "next/dynamic";
+import React from "react";
 import UpperFooterImage from '@/components/UpperFooterImage'
 import DynamicLayout from '@/components/DynamicLayout';
-import { Particles } from "@/components/magicui/particles";
-import React from 'react'
+// import { Particles } from "@/components/magicui/particles";
+
+const Particles = dynamic(() => import("@/components/magicui/particles").then((mod) => mod.Particles), { ssr: false });
+
+// import React from 'react'
 
 const page = () => {
   return (
